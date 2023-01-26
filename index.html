@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,6 +9,7 @@
     <link rel='stylesheet' href='./assets/css/style.css'>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
 </head>
+
 <body>
     <header>
         <!--colour selector-->
@@ -18,10 +20,22 @@
         <!--saved note list-->
         <div></div>
         <!--draft note form-->
-        <div></div>
+        <div id="notepad">
+            <div id="note-title">
+                <input id="title-field" type="text" placeholder="title your note">
+            </div>
+            <div id="note-body">
+                <textarea id="body-field"></textarea>
+            </div>
+        </div>
     </main>
-        <!--buttons-->
-    <footer></footer>
-   <script src="./assets/js/script.js"></script> 
+
+    <!--save/delete notes-->
+    <footer>
+        <button id="btn-save">Save</button>
+        <button id="btn-delete">Delete / Clear </button>
+    </footer>
+    <script src="./assets/js/script.js"></script>
 </body>
+
 </html>
